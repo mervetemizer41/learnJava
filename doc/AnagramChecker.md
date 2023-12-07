@@ -59,6 +59,7 @@ command till you have a command prompt line like this:
 Enter the lines:
 
 > `mkdir learnJava`
+
 > `mkdir learnJava/src`
 
 > `cd learnJava/src`
