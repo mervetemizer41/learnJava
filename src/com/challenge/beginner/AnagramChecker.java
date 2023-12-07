@@ -1,8 +1,6 @@
 package com.challenge.beginner;
 
 import java.util.StringTokenizer;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 
 public class AnagramChecker{
 
