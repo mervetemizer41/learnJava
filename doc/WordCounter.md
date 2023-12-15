@@ -36,147 +36,130 @@ As skills;
 
 ## 3. Writing code in java
 
-As WordCounter.java,
+As [WordCounter.java](https://github.com/mervetemizer41/learnJava/blob/main/src/com/challenge/beginner/WordCounter.java),
 
-```
-package com.challenge.beginner;
+save file inside 
 
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
+> src/com/challenge/beginner
 
+directory.
 
-public class WordCounter{
+As [Application.java](https://github.com/mervetemizer41/learnJava/blob/main/src/com/challenge/beginner/Application.java)
+also update the
 
-	public static String countWord(String sentence, String word){
-		try{
-			Pattern p = Pattern.compile("(" + word + ")");
- 			Matcher m = p.matcher(sentence);
- 			int myMatches = 0;
-			while (m.find()) {
-    				myMatches++;
-			}
-			return Integer.toString(myMatches);
- 			
-		}
-		catch(Exception e){
-			return "Invalid sentence or word!";
-		}
-	}
-	
-	
-}
-```
+> src/com/challenge/beginner/Application.java
 
-As Application.java
+file.
 
 
 ```
 package com.challenge.beginner;
-
-import java.io.IOException;
-
-
-public class Application{
-	
-			
-	public static void main(String[] args)throws IOException{
-		String result;
-		switch(args[0].charAt(0)){
-			case 'w':
-			result = WordReversal.reverseUsingList(args[1]);
-			System.out.println(result);
-			break;
-			case 'n':
-			result = NthWordFinder.findNthWord(args[1], Integer.valueOf(args[2]));
-			System.out.println(result);
-			break;
-			case 'c':
-			result = WordCounter.countWord(args[1], args[2]);
-			System.out.println(result);
-			break;
-		}
-	}	
-	
-}
-
 ```
-
-
-##### package com.challenge.beginner;
 
 This is package identifier line.
 
-##### import java.util.regex.Pattern;
+```
+import java.util.regex.Pattern;
+```
 
 Pattern is a Java class to define the pattern on a regex operation.
 
-##### import java.util.regex.Matcher;
+```
+import java.util.regex.Matcher;
+```
 
 Matcher is a java class to define the regex group on a regex operation.
 
-##### public class WordCounter{
+```
+public class WordCounter{
+```
 
 The class name might be WordCounter
 
-##### public static String countWord(String sentence, String word){
+```
+public static String countWord(String sentence, String word){
+```
 
 countWord named method might return a String according to its arguments sentence and word.
 
-##### try{
+```
+try{
+```
 
 try scope is going to used to catch any exceptions.
 
-##### Pattern p = Pattern.compile("(" + word + ")");
+```
+Pattern p = Pattern.compile("(" + word + ")");
+```
 
 Pattern class of Java's regex package is used to compile Regexp patterns.
 
-##### Matcher m = p.matcher(sentence);
+```
+Matcher m = p.matcher(sentence);
+```
 
 Matcher class instance is generated using pattern class instance p's matcher method. Here it takes the sentence String as parameter.
 
-##### int myMatches = 0;
+```
+int myMatches = 0;
+```
 
 myMatches integer primitive is going to use as result while counting matches by the following lines.
 
-##### while (m.find()) {
+```
+while (m.find()) {
+```
 
 find method of m instance of Matcher class returns boolean value, true if it can find a match or false if can not find more.
 
-##### myMatches++;
+```
+myMatches++;
+```
 
 myMatches is counting more and more.
 
-##### }
-
+```
+}
+```
 Closing while scope should be reminded.
 
-##### return Integer.toString(myMatches);
+```
+return Integer.toString(myMatches);
+```
 
 The result of counting operation should be returned.
 
-##### }
-
+```
+}
+```
 Closing method scope should be reminded too.
 
-##### catch(Exception e){
+```
+catch(Exception e){
+```
 
 If there is a problem appears within try block, the exception might be caught in catch block and the necessary warning might be take place.
 
 
-##### return "Invalid sentence or word!";
+```
+return "Invalid sentence or word!";
+```
 
 Invalid sentence or word sentence as a warning might be returned as a String if the method is run into an unexpected behavior.
 
-##### }
-
+```
+}
+```
 Catch block should be closed.
 
-##### }
-
+```
+}
+```
 Method block should be closed.
 
-##### }
-
+```
+}
+```
 Class method should be closed.
 
 
