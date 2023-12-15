@@ -1,6 +1,6 @@
 ## Check if two words are anagrams using Java
 
-This tutorial consists of 5 parts:
+This tutorial consists of 6 parts:
 
 #### 1. Objectives
 #### 2. Prerequisites
