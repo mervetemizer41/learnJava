@@ -73,100 +73,11 @@ See the prompt like this:
 
 As [AnagramChecker.java](https://github.com/mervetemizer41/learnJava/blob/main/src/com/challenge/beginner/AnagramChecker.java),
 
+save the code using gedit or KWrite and save it with the definite file name with the appropriate file extension ".java".
 
-```
-package com.challenge.beginner;
+As [Application.java](https://github.com/mervetemizer41/learnJava/blob/main/src/com/challenge/beginner/Application.java)
 
-import java.util.StringTokenizer;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-
-public class AnagramChecker{
-
-	public static String checkIfAnagram(String first, String second){
-		try{
-			
- 			boolean hasMore = false;
- 			boolean found = false;
- 			StringTokenizer stFirst = new StringTokenizer(first, first, true);
- 			StringBuilder sbSecond = new StringBuilder(second);
- 			
-			do{	
-				
-				
-				String token = stFirst.nextToken();
-				
-				int index = second.indexOf(token);
-				if(index > -1){
-					found = true;
-					sbSecond.deleteCharAt(index);
-				}else{
-					found = false;
-				}
-				
-				
-	 			second = sbSecond.toString();
-	 			
- 				hasMore = stFirst.hasMoreTokens();
- 				
-				
-			}while(hasMore && found);
-			
-			if(hasMore || !found){
-				return Boolean.toString(false);
- 			}else{
- 				return Boolean.toString(true);
- 			}
-		}
-		catch(Exception e){
-			e.printStackTrace();
-			return "Invalid word!";
-		}
-	 }
-	
-	
-}
-```
-
-As Application.java
-
-
-```
-package com.challenge.beginner;
-
-import java.io.IOException;
-
-
-public class Application{
-	
-			
-	public static void main(String[] args)throws IOException{
-		String result;
-		switch(args[0].charAt(0)){
-			case 'w':
-			result = WordReversal.reverseUsingList(args[1]);
-			System.out.println(result);
-			break;
-			case 'n':
-			result = NthWordFinder.findNthWord(args[1], Integer.valueOf(args[2]));
-			System.out.println(result);
-			break;
-			case 'c':
-			result = WordCounter.countWord(args[1], args[2]);
-			System.out.println(result);
-			break;
-			case 'a':
-			result = AnagramChecker.checkIfAnagram(args[1], args[2]);
-			System.out.println(result);
-			break;
-		}
-	}	
-	
-}
-
-```
-
-
+also save the code.
 
 
 Save the code pieces above in two seperate files as `AnagramChecker.java` and `Application.java` in `src` Directory.
