@@ -52,17 +52,23 @@ save the code inside
 Investigate code line by line.
 
 
-##### `package com.challenge.beginner;`
+```
+package com.challenge.beginner;
+```
 
 This line defines the structure of directories where our code file takes place.
 
 
-##### `public class WordReversal{`
+```
+public class WordReversal{
+```
 
 By this line we tell that the class name which encapsulate the methods we need to reverse our word is WordReversal.
 
 
-##### `public String reverseUsingList(String sentence){`
+```
+public String reverseUsingList(String sentence){
+```
 
 By this line;
 going to be written method's access modifier is described as `public`.
@@ -78,58 +84,70 @@ The name of a method is a describer which allows the developers use in another c
 As one more point by this line:
 the necessity is described that a `String` value should be provided when calling this method. The String that is going to be provided is going to be used as having a reference called `sentence`.
 
-##### `String[] sArray = sentence.split(" ");`
+```
+String[] sArray = sentence.split(" ");
+```
 
 This line makes sentence string tokenized into an array of substrings by using a whitespace as a delimeter. The array's name of substrings is going to be `sArray`.
 
-##### `List listOfSrtings = Arrays.asList(sArray);`
+```
+List listOfSrtings = Arrays.asList(sArray);
+```
 
 The line prepares an object reference `listOfStrings` which is going to belong to java.util.List interface be a `List`. While running the code, after this line `sArray` array's elements are going to take place in `listOfStrings` collection. The Arrays class is going to use with its method `asList` at this line to the tokenization.
 
-##### `Collections.reverse(listOfStrings);`
+```
+Collections.reverse(listOfStrings);
+```
 
 As a collection and also as a `List`, the `listOfStrings` object has the capability of being reversed by a single method call of the method `reverse`.
 
 
-##### `String reversed = "";`
+```
+String reversed = "";
+```
 
 Define reference to return the reversed result.
 
 
-##### `for(String s : listOfStrings){`
+```
+for(String s : listOfStrings){
+```
 
 Here is the `for` loop with an 'iteration' which is going to be cycled by the elements of `listOfStrings` list. By the `s` reference, on a single cycle, the code between curly braces or in other words within the 'scope' of the for loop, the single element is going to be dealt with. 
 
-##### `reversed += s + " ";`
+```
+reversed += s + " ";
+```
 
 Update `reversed` reference's value on each cycle with word `s`.
 
 
-##### `}`
+```
+}
+```
 
 Declare the end of for loop scope. It is required to notice that the reference `s` won't going to be valid after the closing curly brackets. The scope concept can be thought that you do not have a legal identity card when you leave your country that you were born in it. There is no passport for references and objects, thus the `s` reference defined on iteration line of for loop can not be used after running continues.
 
-##### `return reversed;`
+```
+return reversed;
+```
 
 Return to the line of calling wherever it was.
 
-##### `}`
+```
+}
+```
 
 Declare the end of `reverseUsingArrayList` method's scope. To make it more comprehensible, let's repeat the identity card concept. After this curly bracket, the `sentence`, `sArray`, `listOfStrings` and `reversed` references can not be accessed or used any more.
 
-##### `}`
+```
+}
+```
 
 Declare the end of `WordReversal` class scope. One more time encountering with curly bracket finishes the WordReversal class. Thus, reminding that `public` access modifier of the method within this class allows developer to use the `reverseUsingArrayList` method wherever required. 
-
-After copying and pasting the first code piece containing WordReversal class, save it as 
-
-> WordReversal.java
-
-Also, after copying and pasting the second code piece with Application class, save it as 
-
-> Application.java 
-
-and notice the file names are crucial because our Java class in the code has this name. By saving your file please remind the place you save it in. Say, you save the file in the directory
+ 
+Notice the file names are crucial because our Java class in the code has this name. By saving your file please remind the place you save it in. Say, you save the file in the directory
 
 > /home/<your name>/Documents/learningJava/
 
