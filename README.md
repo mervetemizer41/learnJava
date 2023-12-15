@@ -2,7 +2,7 @@
 
 Here are solutions for beginner Java challenges and tutorials to demonstrate my tutorializing skills.
 
-The files can be found here are;
+The tutorials can be found here are;
 
 [AnagramChecker.md](https://github.com/mervetemizer41/learnJava/blob/main/doc/AnagramChecker.md)
 
