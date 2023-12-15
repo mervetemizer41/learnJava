@@ -36,66 +36,20 @@ As skills;
 
 Open your favorite text editor, copy and paste the below code piece:
 
-As WordReversal.java;
+As [WordReversal.java](https://github.com/mervetemizer41/learnJava/blob/main/src/com/challenge/beginner/WordReversal.java);
 
-```
-package com.challenge.beginner;
+save the code inside
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-
-public class WordReversal{
+> src/com/challenge/beginner/WordReversal.java
 
 
-	public static String reverseUsingList(String sentence){
-		try{
-			String[] sArray = sentence.split(" ");
-			List<String> listOfStrings = Arrays.asList(sArray);
-			Collections.reverse(listOfStrings);
-			String reversed = "";
-			for(String s : listOfStrings){
-				reversed += s;
-				reversed += " ";
-			}
-			return reversed;
-		}
-		catch(Exception e){
-			return "Invalid sentence for WordReversal!";
-		}
-	}
+As [Application.java](https://github.com/mervetemizer41/learnJava/blob/main/src/com/challenge/beginner/Application.java)
 
+save the code inside
 
-	
-
-}
-```
-
-As Application.java;
-
-```
-package com.challenge.beginner;
-
-import java.io.IOException;
-
-
-public class Application{
-	
-			
-	public static void main(String[] args)throws IOException{
-		String result;
-		result = WordReversal.reverseUsingList(args[1]);
-		System.out.println(result);
-		
-	}	
-	
-}
-
-```
+> src/com/challenge/beginner/WordReversal.java
 
 Investigate code line by line.
-
 
 
 ##### `package com.challenge.beginner;`
