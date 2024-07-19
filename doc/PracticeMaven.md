@@ -24,3 +24,27 @@ If you want to run it
 mvn exec:java -D exec.mainClass=com.mervetemizer41.zemberek_kullan.uyg.App
 ```
 
+Below is the App file I modified:
+
+```
+package com.mervetemizer41.zemberek_kullan.uyg;
+
+
+import zemberek.morphology.TurkishMorphology;
+import zemberek.morphology.analysis.WordAnalysis;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Zemberek'e hoşgeldiniz!" );
+
+	TurkishMorphology morphology = TurkishMorphology.createWithDefaults();
+	WordAnalysis results = morphology.analyze("kalemin");
+	results.forEach(s -> System.out.println(s.formatLong()));
+    }
+}
+
+```
+
+
