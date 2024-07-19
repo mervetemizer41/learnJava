@@ -44,7 +44,26 @@ public class App
 	results.forEach(s -> System.out.println(s.formatLong()));
     }
 }
+```
+Also below is the parts to be added into pom.xml
 
 ```
+<dependencies>
+...
+	<dependency>
+            <groupId>zemberek-nlp</groupId>
+            <artifactId>zemberek-morphology</artifactId>
+            <version>0.17.1</version>
+        </dependency>
+...
+  </dependencies>
 
+    <repositories>
+        <repository>
+            <id>zemberek-repo</id>
+            <name>zemberek Maven Repo on Github</name>
+            <url>https://raw.github.com/ahmetaa/maven-repo/master</url>
+        </repository>
+    </repositories>
 
+```
