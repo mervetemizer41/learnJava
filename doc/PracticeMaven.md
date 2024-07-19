@@ -24,7 +24,7 @@ If you want to run it
 mvn exec:java -D exec.mainClass=com.mervetemizer41.zemberek_kullan.uyg.App
 ```
 
-Below is the App file I modified:
+Below is the App.java file I modified:
 
 ```
 package com.mervetemizer41.zemberek_kullan.uyg;
