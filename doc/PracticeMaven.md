@@ -67,3 +67,22 @@ Also below is the parts to be added into pom.xml
     </repositories>
 
 ```
+Let's execute again and see it is working:
+
+```
+mvn exec:java -D exec.mainClass=com.mervetemizer41.zemberek_kullan.uyg.App
+```
+Output should have lines like below:
+
+```
+Zemberek'e hoşgeldiniz!
+I|13:32:54.111|Root lexicon created in 636 ms.                                                                     | DictionarySerializer#getDictionaryItems
+I|13:32:54.112|Dictionary generated in 765 ms                                                                      | RootLexicon#defaultBinaryLexicon
+I|13:32:54.773|Initialized in 1522 ms.                                                                             | TurkishMorphology#createWithDefaults
+[kale:Noun] kale:Noun+A3sg+m:P1sg+in:Gen
+[Kale:Noun,Prop] kale:Noun+A3sg+m:P1sg+in:Gen
+[kalem:Noun] kalem:Noun+A3sg+in:Gen
+[kalem:Noun] kalem:Noun+A3sg+in:P2sg
+
+```
+That's it!
