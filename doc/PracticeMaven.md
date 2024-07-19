@@ -20,4 +20,7 @@ If everything is ok ok after running this on a powershell on Windows or terminal
 
 If you want to run it
 
+```
+mvn exec:java -D exec.mainClass=com.mervetemizer41.zemberek_kullan.uyg.App
+```
 
